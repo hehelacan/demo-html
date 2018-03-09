@@ -4,46 +4,57 @@
   <title>Bootstrap Grid Layout</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="bootstrap-social/assets/css/font-awesome.css">
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"> -->
   <link rel="stylesheet" type="text/css" href="master.css">
 </head>
 <body>
   <header>
     <div class="container-fluid">
-      <div class="content row">
-        <div class="box-logo col-sm-7">
-          <h1 id="logo"><a href="#">STEVEN SNELL</a></h1>
-          <p><a href="#">web & graphic design portfolio</a></p>
+      <div class="content">
+        <div class="row">
+          <div class="col-sm-7 col-lg-7">
+            <div class="box-logo">
+              <h1 id="logo"><a href="#">STEVEN SNELL</a></h1>
+              <p><a href="#">web & graphic design portfolio</a></p>
+            </div>
+          </div>
+          <nav class="col-sm-5 col-lg-5">
+            <div class="box-menu">
+              <a href="#work">work</a>
+              <a href="#services">services</a>
+              <a href="#contact">contact me</a>
+            </div>
+          </nav>
         </div>
-        <nav class="box-menu col-sm-5">
-          <a href="#work">work</a>
-          <a href="#services">services</a>
-          <a href="#contact">contact me</a>
-        </nav>
       </div>
     </div>
   </header>
   <div class="wrap">
     <div class="container-fluid main-container">
-      <div class="content row">
-        <div class="text-content col-sm-6">
-          <h2 class="title">ABOUT ME</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-        </div>
-        <div class="text-content col-sm-6">
-          <h2 class="title">LOOKING FOR A DESIGNER?</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate </p>
-          <div class="row content-sub">
-            <div class="content-sub-image col-sm-5">
-              <a href="#hire"><img src="image/hire.png" alt="Hire Me"></a>
-            </div>
-            <div class="content-sub-text col-sm-7">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-              <p class="text-email"><span>email: </span><a href="mailto:mymail@mydomain.com">mymail@mydomain.com</a></p>
+      <div class="content">
+        <div class="row">
+          <div class="col-sm-6">
+            <h2 class="title">ABOUT ME</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          </div>
+          <div class="col-sm-6">
+            <h2 class="title">LOOKING FOR A DESIGNER?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+            <div class="row">
+              <div class="col-sm-6 col-lg-5">
+                <a class="image-hire" href="#hire"><img src="image/hire-me-image.png" alt="Hire Me"></a>
+              </div>
+              <div class="col-sm-6 col-lg-7">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <p class="text-email"><span>email: </span><a href="mailto:mymail@mydomain.com">mymail@mydomain.com</a></p>
+              </div>
             </div>
           </div>
         </div>
@@ -51,130 +62,198 @@
     </div>
 
     <div class="container-fluid box-main-content">
-      <div class="content row">
-        <h2 class="title">MY WORK</h2>
-        <div class="content-box col-sm-4">
-          <div class="content-image">
-            <a href="https://google.com"><img src="image/image-part2.jpg" width="267" alt="Part2"></a>
+      <div class="content">
+        <div class="row">
+          <div class="title">
+            <h2 class="col-sm-12">MY WORK</h2>
           </div>
-          <div class="box-text">
-            <h3 class="title-sub"><a href="#">My Corporate Website</a></h3>
-            <p>Personal project from October, 2009</p>
+          <!-- content box -->
+
+          <div class="col-sm-4">
+            <div class="content-box">
+              <div class="content-image">
+                <a href="https://google.com">
+                  <img src="image/image-part2.jpg" width="267" alt="Part2">
+                </a>
+              </div>
+              <div class="box-text">
+                <h3 class="title-sub"><a href="#">My Corporate Website</a></h3>
+                <p>Personal project from October, 2009</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="content-box col-sm-4">
-          <div class="content-image">
-            <a href="https://google.com"><img src="image/image-part2.jpg" alt="Part2"></a>
+          <div class="col-sm-4">
+            <div class="content-box">
+              <div class="content-image">
+                <a href="https://google.com">
+                  <img src="image/image-part2.jpg" width="267" alt="Part2">
+                </a>
+              </div>
+              <div class="box-text">
+                <h3 class="title-sub"><a href="#">My Corporate Website</a></h3>
+                <p>Personal project from October, 2009</p>
+              </div>
+            </div>
           </div>
-          <div class="box-text">
-            <h3 class="title-sub"><a href="#">My Corporate Website</a></h3>
-            <p>Personal project from October, 2009</p>
+          <div class="col-sm-4">
+            <div class="content-box">
+              <div class="content-image">
+                <a href="https://google.com">
+                  <img src="image/image-part2.jpg" width="267" alt="Part2">
+                </a>
+              </div>
+              <div class="box-text">
+                <h3 class="title-sub"><a href="#">My Corporate Website</a></h3>
+                <p>Personal project from October, 2009</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="content-box col-sm-4">
-          <div class="content-image">
-            <a href="https://google.com"><img src="image/image-part2.jpg" alt="Part2"></a>
+          <div class="col-sm-4">
+            <div class="content-box">
+              <div class="content-image">
+                <a href="https://google.com">
+                  <img src="image/image-part2.jpg" width="267" alt="Part2">
+                </a>
+              </div>
+              <div class="box-text">
+                <h3 class="title-sub"><a href="#">My Corporate Website</a></h3>
+                <p>Personal project from October, 2009</p>
+              </div>
+            </div>
           </div>
-          <div class="box-text">
-            <h3 class="title-sub"><a href="#">My Corporate Website</a></h3>
-            <p>Personal project from October, 2009</p>
+          <div class="col-sm-4">
+            <div class="content-box">
+              <div class="content-image">
+                <a href="https://google.com">
+                  <img src="image/image-part2.jpg" width="267" alt="Part2">
+                </a>
+              </div>
+              <div class="box-text">
+                <h3 class="title-sub"><a href="#">My Corporate Website</a></h3>
+                <p>Personal project from October, 2009</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="content-box col-sm-4">
-          <div class="content-image">
-            <a href="https://google.com"><img src="image/image-part2.jpg" alt="Part2"></a>
+          <div class="col-sm-4">
+            <div class="content-box">
+              <div class="content-image">
+                <a href="https://google.com">
+                  <img src="image/image-part2.jpg" width="267" alt="Part2">
+                </a>
+              </div>
+              <div class="box-text">
+                <h3 class="title-sub"><a href="#">My Corporate Website</a></h3>
+                <p>Personal project from October, 2009</p>
+              </div>
+            </div>
           </div>
-          <div class="box-text">
-            <h3 class="title-sub"><a href="#">My Corporate Website</a></h3>
-            <p>Personal project from October, 2009</p>
+          <div class="col-sm-4">
+            <div class="content-box">
+              <div class="content-image">
+                <a href="https://google.com">
+                  <img src="image/image-part2.jpg" width="267" alt="Part2">
+                </a>
+              </div>
+              <div class="box-text">
+                <h3 class="title-sub"><a href="#">My Corporate Website</a></h3>
+                <p>Personal project from October, 2009</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="content-box col-sm-4">
-          <div class="content-image">
-            <a href="https://google.com"><img src="image/image-part2.jpg" alt="Part2"></a>
+          <div class="col-sm-4">
+            <div class="content-box">
+              <div class="content-image">
+                <a href="https://google.com">
+                  <img src="image/image-part2.jpg" width="267" alt="Part2">
+                </a>
+              </div>
+              <div class="box-text">
+                <h3 class="title-sub"><a href="#">My Corporate Website</a></h3>
+                <p>Personal project from October, 2009</p>
+              </div>
+            </div>
           </div>
-          <div class="box-text">
-            <h3 class="title-sub"><a href="#">My Corporate Website</a></h3>
-            <p>Personal project from October, 2009</p>
-          </div>
-        </div>
-        <div class="content-box col-sm-4">
-          <div class="content-image">
-            <a href="https://google.com"><img src="image/image-part2.jpg" alt="Part2"></a>
-          </div>
-          <div class="box-text">
-            <h3 class="title-sub"><a href="#">My Corporate Website</a></h3>
-            <p>Personal project from October, 2009</p>
-          </div>
-        </div>
-        <div class="content-box col-sm-4">
-          <div class="content-image">
-            <a href="https://google.com"><img src="image/image-part2.jpg" alt="Part2"></a>
-          </div>
-          <div class="box-text">
-            <h3 class="title-sub"><a href="#">My Corporate Website</a></h3>
-            <p>Personal project from October, 2009</p>
-          </div>
-        </div>
-        <div class="content-box col-sm-4">
-          <div class="content-image">
-            <a href="https://google.com"><img src="image/image-part2.jpg" alt="Part2"></a>
-          </div>
-          <div class="box-text">
-            <h3 class="title-sub"><a href="#">My Corporate Website</a></h3>
-            <p>Personal project from October, 2009</p>
-          </div>
-        </div>
-        <div class="content-box col-sm-4">
-          <div class="content-image">
-            <a href="https://google.com"><img src="image/image-part2.jpg" alt="Part2"></a>
-          </div>
-          <div class="box-text">
-            <h3 class="title-sub"><a href="#">My Corporate Website</a></h3>
-            <p>Personal project from October, 2009</p>
+          <div class="col-sm-4">
+            <div class="content-box">
+              <div class="content-image">
+                <a href="https://google.com">
+                  <img src="image/image-part2.jpg" width="267" alt="Part2">
+                </a>
+              </div>
+              <div class="box-text">
+                <h3 class="title-sub"><a href="#">My Corporate Website</a></h3>
+                <p>Personal project from October, 2009</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <div class="container-fluid box-news-content">
-      <div class="content row">
-        <div class="col-sm-4 content-portfolio">
-          <h2 class="title-portfolio title-service">SERVICES</h2>
-          <h3 class="title-sub">Web Design</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <h3 class="title-sub">Web Development</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <h3 class="title-sub">Graphic Design</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <div class="col-sm-4 content-portfolio">
-          <h2 class="title-portfolio title-tweet">TWEETS</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-        </div>
-        <div class="col-sm-4 content-portfolio">
-          <h2 class="title-portfolio title-contact">CONTACT</h2>
-          <p class="text-email">If you’re interested in getting a quote for a project or if you just have some quetions, please <a href="mailto:joe@example.com">email me</a> with the details and I will get in touch with you as soon as possible. You can also find me on several social networking sites, my profiles are listed below.</p>
-          <p class="text-email"><span>Email: </span><a href="mailto:joe@example.com">mymail@mydomain.com</a></p>
-            <ul class="social-icon">
-              <li><a class="link-twitter" href="#twitter">Twitter</a></li>
-              <li><a class="link-deliciou" href="#delicious">Delicious</a></li>
-              <li><a class="link-flickr" href="#flickr">Flickr</a></li>
-            </ul>
-        </div>
-        <div class="col-sm-12 return-top">
-          <p><a href="#logo">Return to top</a></p>
-        </div>
+      <div class="content">
+        <div class="row">
+          <div class="col-sm-4">
+            <h2 class="title-service">SERVICES</h2>
+            <h3 class="title-sub">Web Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h3 class="title-sub">Web Development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h3 class="title-sub">Graphic Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="col-sm-4">
+            <h2 class="title-tweet">TWEETS</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="col-sm-4">
+            <h2 class="title-contact">CONTACT</h2>
+            <p class="text-email">If you’re interested in getting a quote for a project or if you just have some quetions, please <a href="mailto:joe@example.com">email me</a> with the details and I will get in touch with you as soon as possible. You can also find me on several social networking sites, my profiles are listed below.</p>
+            <p class="text-email"><span>Email: </span><a href="mailto:joe@example.com">mymail@mydomain.com</a></p>
+              <div class="social-icon">
+                <a class="btn btn-social-icon btn-twitter">
+                  <span class="fa fa-twitter"></span> Twitter
+                </a>
+
+                <a class="btn btn-social-icon btn-delicious">
+                  <span class="fa fa-delicious"></span> Delicious
+                </a>
+
+                <a class="btn btn-social-icon btn-flickr">
+                  <span class="fa fa-flickr"></span> Flickr
+                </a>
+
+                <!-- <a class="btn-social btn-twitter" href="#twitter">
+                  <span class="fa fa-twitter"></span>Twitter
+                </a>
+                <a class="btn-social btn-delicious" href="#delicious">
+                  <span class="fa fa-delicious"></span>Delicious
+                </a>
+                <a class="btn-social btn-flickr" href="#flickr">
+                  <span class="fa fa-flickr"></span>Flickr
+                </a> -->
+
+                <!-- <p><a class="link-deliciou" href="#delicious">Delicious</a></p>
+                <p><a class="link-flickr" href="#flickr">Flickr</a></p> -->
+              </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="return-top">
+              <p><a href="#logo">Return to top</a></p>
+            </div>
+          </div>
+        </div> <!-- end row-->
       </div>
     </div>
+
   </div>
   <footer>
     <div class="content">
-      <p class="footer-text">&copy; Steven Snell, 2009</p>
+      <p class="footer-text col-sm-12">&copy; Steven Snell, 2009</p>
     </div>
   </footer>
 </body>
